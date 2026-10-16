@@ -1,0 +1,86 @@
+Modbus command - 
+
+
+subscribe payload :-
+
+{
+  "Device_count": 3,
+  "Devices": [
+    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP",
+      "Register_Count":1,
+      "Register_Name": ["ORP"],
+      "Register_Address": ["0x0000"],
+      "Quantity": [1],
+      "Data_Type": ["uint16"], // mapping with the string value.
+      "Byte_Order": ["ABCD"], // mapping with the string value.
+      "Offset": [1],
+      "Slope": [1],
+      "Decimal":[1],
+    },
+    {
+      "Device_no": 2,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP",
+      "Register_Count":1,
+      "Register_Name": ["ORP"],
+      "Register_Address": ["0x0000"],
+      "Quantity": [1],
+      "Data_Type": ["uint16"], // mapping with the string value.
+      "Byte_Order": ["ABCD"], // mapping with the string value.
+      "Offset": [1],
+      "Slope": [1],
+      "Decimal":[1],
+    },
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Register_Name": "ORP",
+      "Register_Count":1,
+      "Device_Name": ["ORP"],
+      "Register_Address": ["0x0000"],
+      "Quantity": [1],
+      "Data_Type": ["uint16"], // mapping with the string value.
+      "Byte_Order": ["ABCD"], // mapping with the string value.
+      "Offset": [1],
+      "Slope": [1],
+      "Decimal":[1],
+    }
+  ]
+}
+
+
+
+Publish payload :- 
+
+{
+  "Device_count": 3,
+  "Devices": [
+    {
+      "Device_no": 1,
+      "Device_Name": "ORP",
+      "Register_Name":["ORP"],
+      "Status": ["Success"],
+      "Value": [251]
+    },
+    {
+      "Device_no": 2,
+      "Device_Name": "ORP",
+      "Register_Name":["ORP"],
+      "Status": ["Success"],
+      "Value": [251]
+    },
+    {
+      "Device_no": 3,
+      "Device_Name": "ORP",
+      "Register_Name":["ORP"],
+      "Status": ["Success"],
+      "Value": [251]
+    }
+  ]
+}

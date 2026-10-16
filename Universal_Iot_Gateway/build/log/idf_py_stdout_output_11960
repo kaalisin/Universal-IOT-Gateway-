@@ -1,0 +1,2325 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 11 2026 11:34:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: Defaulting to factory image[0m
+[0;32mI (103) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=3aaa4h (240292) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0005aacc vaddr=3fc9a600 size=0496ch ( 18796) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0005f440 vaddr=40374000 size=00bd8h (  3032) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=ab20ch (700940) map[0m
+[0;32mI (295) esp_image: segment 4: paddr=0010b234 vaddr=40374bd8 size=1591ch ( 88348) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (336) cpu_start: Multicore app[0m
+[0;32mI (345) cpu_start: Pro cpu start user code[0m
+[0;32mI (345) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (345) app_init: Application information:[0m
+[0;32mI (348) app_init: Project name:     app-template[0m
+[0;32mI (353) app_init: App version:      f28ea0c-dirty[0m
+[0;32mI (359) app_init: Compile time:     Oct 11 2026 11:34:21[0m
+[0;32mI (365) app_init: ELF file SHA256:  5501701d9...[0m
+[0;32mI (370) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (375) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (380) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (385) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FCA3788 len 00045F88 (279 KiB): RAM[0m
+[0;32mI (403) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (409) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (415) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (423) spi_flash: detected chip: generic[0m
+[0;32mI (426) spi_flash: flash io: dio[0m
+[0;33mW (430) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (450) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (478) main_task: Calling app_main()[0m
+[0;32mI (498) NVS: Wi-Fi credentials loaded successfully[0m
+[0;32mI (508) pp: pp rom version: e7ae62f[0m
+[0;32mI (508) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (518) wifi:wifi driver task: 3fcaddbc, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formating: disabled[0m
+[0;32mI (528) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (538) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (548) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (548) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp tx win: 5760[0m
+[0;32mI (588) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (598) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (608) WI-FI: Credentials available. Connecting to Wi-Fi[0m
+[0;33mW (608) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (618) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (668) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (688) wifi:mode : sta (7c:df:a1:e2:d7:98)[0m
+[0;32mI (688) wifi:enable tsf[0m
+[0;32mI (698) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (698) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (718) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (738) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (738) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (748) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (748) WIFI: STAT DISCONNECTED[0m
+[0;32mI (748) WIFI:: DISCONNECT COUNT = 1[0m
+[0;32mI (3158) WIFI: STAT DISCONNECTED[0m
+[0;32mI (3158) WIFI:: DISCONNECT COUNT = 2[0m
+[0;32mI (3178) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3178) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3198) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3228) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3278) wifi:connected with vivo Y400 Pro 5G, aid = 1, channel 6, BW20, bssid = e6:db:97:89:6c:59[0m
+[0;32mI (3278) wifi:security: WPA2-PSK, phy: bgn, rssi: -90[0m
+[0;32mI (3278) wifi:pm start, type: 1[0m
+
+[0;32mI (3278) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3288) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3298) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3308) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3318) WIFI: STAT CONNECTED[0m
+[0;32mI (4318) esp_netif_handlers: sta ip: 10.47.123.77, mask: 255.255.255.0, gw: 10.47.123.221[0m
+[0;32mI (4318) WIFI: Got IP: 10.47.123.77[0m
+[0;32mI (10688) MQTT: DEFAULT CASE EXECUTE[0m
+[0;32mI (10758) wifi:<ba-add>idx:0 (ifx:0, e6:db:97:89:6c:59), tid:0, ssn:4, winSize:64[0m
+[0;32mI (11128) wifi:<ba-add>idx:1 (ifx:0, e6:db:97:89:6c:59), tid:6, ssn:10, winSize:64[0m
+[0;32mI (11178) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (11888) MQTT: CONNECTED[0m
+[0;32mI (12088) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (12298) MQTT: SUBSCRIBED DATA[0m
+[0;32mI (21928) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (21928) MQTT: Received 989/1659 bytes[0m
+[0;32mI (21928) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (21928) MQTT: Received 1659/1659 bytes[0m
+Complete Data = {
+  "Device_count": 3,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 69,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "Temp_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    }
+  ]
+}
+Device count = 3
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 1, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 1, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 2, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 2, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 2, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+
+Device 3, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 3, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 3, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 3, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 3, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+[0;32mI (35688) MODBUS: Register name: ORP[0m
+[0;31mE (35688) MODBUS: No response: device=0, register=0[0m
+[0;32mI (40688) MODBUS: Register name: TEMP[0m
+[0;31mE (40688) MODBUS: No response: device=0, register=1[0m
+[0;32mI (45688) MODBUS: Register name: COND[0m
+[0;31mE (45688) MODBUS: No response: device=0, register=2[0m
+[0;32mI (50688) MODBUS: Register name: TDS[0m
+[0;31mE (50688) MODBUS: No response: device=0, register=3[0m
+[0;32mI (55688) MODBUS: Register name: ORP[0m
+[0;31mE (55688) MODBUS: No response: device=1, register=0[0m
+[0;32mI (60688) MODBUS: Register name: TEMP[0m
+[0;31mE (60688) MODBUS: No response: device=1, register=1[0m
+[0;32mI (65688) MODBUS: Register name: COND[0m
+[0;31mE (65688) MODBUS: No response: device=1, register=2[0m
+[0;32mI (70688) MODBUS: Register name: TDS[0m
+[0;31mE (70688) MODBUS: No response: device=1, register=3[0m
+[0;32mI (75688) MODBUS: Register name: PH[0m
+[0;31mE (75688) MODBUS: No response: device=1, register=4[0m
+[0;32mI (80688) MODBUS: Register name: ORP[0m
+[0;31mE (80688) MODBUS: No response: device=2, register=0[0m
+[0;32mI (85688) MODBUS: Register name: TEMP[0m
+[0;31mE (85688) MODBUS: No response: device=2, register=1[0m
+[0;32mI (90688) MODBUS: Register name: COND[0m
+[0;31mE (90688) MODBUS: No response: device=2, register=2[0m
+[0;32mI (95688) MODBUS: Register name: TDS[0m
+[0;31mE (95688) MODBUS: No response: device=2, register=3[0m
+[0;32mI (100688) MODBUS: Register name: PH[0m
+[0;31mE (100688) MODBUS: No response: device=2, register=4[0m
+[0;32mI (100688) MQTT: Payload: {"Device_count":3,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (100728) MQTT: Payload queued successfully, msg_id=55373[0m
+[0;32mI (100978) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (115738) MODBUS: Register name: ORP[0m
+[0;31mE (115738) MODBUS: No response: device=0, register=0[0m
+[0;32mI (120738) MODBUS: Register name: TEMP[0m
+[0;31mE (120738) MODBUS: No response: device=0, register=1[0m
+[0;32mI (125738) MODBUS: Register name: COND[0m
+[0;31mE (125738) MODBUS: No response: device=0, register=2[0m
+[0;32mI (130738) MODBUS: Register name: TDS[0m
+[0;31mE (130738) MODBUS: No response: device=0, register=3[0m
+[0;32mI (135738) MODBUS: Register name: ORP[0m
+[0;31mE (135738) MODBUS: No response: device=1, register=0[0m
+[0;32mI (140088) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (140088) MQTT: Received 989/1659 bytes[0m
+[0;32mI (140098) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (140098) MQTT: Received 1659/1659 bytes[0m
+Complete Data = {
+  "Device_count": 5,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 69,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "Temp_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    }
+  ]
+}
+Device count = 5
+ERROR: Device count mismatch
+Device_count = 5, Array count = 3
+[0;32mI (140738) MODBUS: Register name: TEMP[0m
+[0;31mE (140738) MODBUS: No response: device=1, register=1[0m
+[0;32mI (145738) MODBUS: Register name: COND[0m
+[0;31mE (145738) MODBUS: No response: device=1, register=2[0m
+[0;32mI (150738) MODBUS: Register name: TDS[0m
+[0;31mE (150738) MODBUS: No response: device=1, register=3[0m
+[0;32mI (155738) MODBUS: Register name: PH[0m
+[0;31mE (155738) MODBUS: No response: device=1, register=4[0m
+[0;32mI (160738) MODBUS: Register name: ORP[0m
+[0;31mE (160738) MODBUS: No response: device=2, register=0[0m
+[0;32mI (165738) MODBUS: Register name: TEMP[0m
+[0;31mE (165738) MODBUS: No response: device=2, register=1[0m
+[0;32mI (170738) MODBUS: Register name: COND[0m
+[0;31mE (170738) MODBUS: No response: device=2, register=2[0m
+[0;32mI (175738) MODBUS: Register name: TDS[0m
+[0;31mE (175738) MODBUS: No response: device=2, register=3[0m
+[0;32mI (180738) MODBUS: Register name: PH[0m
+[0;31mE (180738) MODBUS: No response: device=2, register=4[0m
+[0;32mI (180738) MQTT: Payload: {"Device_count":3,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (180778) MQTT: Payload queued successfully, msg_id=56634[0m
+[0;32mI (181048) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (195788) MODBUS: Register name: ORP[0m
+[0;31mE (195788) MODBUS: No response: device=0, register=0[0m
+[0;32mI (200788) MODBUS: Register name: TEMP[0m
+[0;31mE (200788) MODBUS: No response: device=0, register=1[0m
+[0;32mI (205218) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (205218) MQTT: Received 989/2199 bytes[0m
+[0;32mI (205228) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (205228) MQTT: Received 2013/2199 bytes[0m
+[0;32mI (205238) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (205238) MQTT: Received 2199/2199 bytes[0m
+Complete Data = {
+  "Device_count": 4,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 69,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "Temp_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 89,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "COND_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    }
+  ]
+}
+Device count = 4
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+[0;31mE (205788) MODBUS: Invalid register name pointer: device=0, register=2[0m
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+[0;31mE (205788) MODBUS: No response: device=0, register=2[0m
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+[0;31mE (205808) MODBUS: Invalid device configuration: 1[0m
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 1, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 1, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 2, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 2, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 2, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+
+Device 3, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 3, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 3, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 3, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 3, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+
+Device 4, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 4, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 4, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 4, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 4, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+[0;32mI (220818) MODBUS: Register name: ORP[0m
+[0;31mE (220818) MODBUS: No response: device=0, register=0[0m
+[0;32mI (225818) MODBUS: Register name: TEMP[0m
+[0;31mE (225818) MODBUS: No response: device=0, register=1[0m
+[0;32mI (230818) MODBUS: Register name: COND[0m
+[0;31mE (230818) MODBUS: No response: device=0, register=2[0m
+[0;32mI (235818) MODBUS: Register name: TDS[0m
+[0;31mE (235818) MODBUS: No response: device=0, register=3[0m
+[0;32mI (240818) MODBUS: Register name: ORP[0m
+[0;31mE (240818) MODBUS: No response: device=1, register=0[0m
+[0;32mI (245818) MODBUS: Register name: TEMP[0m
+[0;31mE (245818) MODBUS: No response: device=1, register=1[0m
+[0;32mI (250818) MODBUS: Register name: COND[0m
+[0;31mE (250818) MODBUS: No response: device=1, register=2[0m
+[0;32mI (255818) MODBUS: Register name: TDS[0m
+[0;31mE (255818) MODBUS: No response: device=1, register=3[0m
+[0;32mI (260818) MODBUS: Register name: PH[0m
+[0;31mE (260818) MODBUS: No response: device=1, register=4[0m
+[0;32mI (265818) MODBUS: Register name: ORP[0m
+[0;31mE (265818) MODBUS: No response: device=2, register=0[0m
+[0;32mI (270818) MODBUS: Register name: TEMP[0m
+[0;31mE (270818) MODBUS: No response: device=2, register=1[0m
+[0;32mI (275818) MODBUS: Register name: COND[0m
+[0;31mE (275818) MODBUS: No response: device=2, register=2[0m
+[0;32mI (280818) MODBUS: Register name: TDS[0m
+[0;31mE (280818) MODBUS: No response: device=2, register=3[0m
+[0;32mI (285818) MODBUS: Register name: PH[0m
+[0;31mE (285818) MODBUS: No response: device=2, register=4[0m
+[0;32mI (290818) MODBUS: Register name: ORP[0m
+[0;31mE (290818) MODBUS: No response: device=3, register=0[0m
+[0;32mI (295818) MODBUS: Register name: TEMP[0m
+[0;31mE (295818) MODBUS: No response: device=3, register=1[0m
+[0;32mI (300818) MODBUS: Register name: COND[0m
+[0;31mE (300818) MODBUS: No response: device=3, register=2[0m
+[0;32mI (305818) MODBUS: Register name: TDS[0m
+[0;31mE (305818) MODBUS: No response: device=3, register=3[0m
+[0;32mI (310818) MODBUS: Register name: PH[0m
+[0;31mE (310818) MODBUS: No response: device=3, register=4[0m
+[0;32mI (310818) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (310878) MQTT: Payload queued successfully, msg_id=30226[0m
+[0;32mI (312328) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (325878) MODBUS: Register name: ORP[0m
+[0;31mE (325878) MODBUS: No response: device=0, register=0[0m
+[0;32mI (330878) MODBUS: Register name: TEMP[0m
+[0;31mE (330878) MODBUS: No response: device=0, register=1[0m
+[0;32mI (335878) MODBUS: Register name: COND[0m
+[0;31mE (335878) MODBUS: No response: device=0, register=2[0m
+[0;32mI (339358) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (339358) MQTT: Received 989/2197 bytes[0m
+[0;32mI (339368) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (339368) MQTT: Received 2013/2197 bytes[0m
+[0;32mI (339378) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (339378) MQTT: Received 2197/2197 bytes[0m
+Complete Data = {
+  "Device_count": 4,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 69,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "Temp_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 89,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "COND_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    }
+  ]
+}
+Device count = 4
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+Offset is Invalid
+[0;31mE (340878) MODBUS: Invalid register name pointer: device=0, register=3[0m
+[0;31mE (340878) MODBUS: No response: device=0, register=3[0m
+[0;31mE (340878) MODBUS: Invalid device configuration: 1[0m
+[0;32mI (421278) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (421288) MQTT: Received 989/2199 bytes[0m
+[0;32mI (421288) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (421288) MQTT: Received 2013/2199 bytes[0m
+[0;32mI (421298) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (421298) MQTT: Received 2199/2199 bytes[0m
+Complete Data = {
+  "Device_count": 4,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 1,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 69,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "Temp_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },    {
+      "Device_no": 89,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "COND_Sensor",
+      "Register_Count": 5,
+      "Register_Name": ["ORP","TEMP","COND","TDS","PH"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    }
+  ]
+}
+Device count = 4
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 3
+Device No     = 69
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 4
+Device No     = 89
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = PH
+, index = 4Register Address = 0x0005
+ , index = 4Quantity = 1
+, index = 4
+Data Type     = 3
+ , index = 4
+Byte Order    = 1
+ , index = 4
+Offset        = 1.00
+ , index = 4
+Scale         = 1.00
+ , index = 4
+Decimal  = 1
+ , index = 4
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 1, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 1, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 2, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 2, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 2, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+
+Device 3, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 3, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 3, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 3, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 3, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+
+Device 4, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 4, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 4, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 4, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 4, Register 5 - Modbus Command: 01 03 00 05 00 01 94 0B 
+[0;32mI (435878) MODBUS: Register name: ORP[0m
+[0;31mE (435878) MODBUS: No response: device=0, register=0[0m
+[0;32mI (440878) MODBUS: Register name: TEMP[0m
+[0;31mE (440878) MODBUS: No response: device=0, register=1[0m
+[0;32mI (445878) MODBUS: Register name: COND[0m
+[0;31mE (445878) MODBUS: No response: device=0, register=2[0m
+[0;32mI (450878) MODBUS: Register name: TDS[0m
+[0;31mE (450878) MODBUS: No response: device=0, register=3[0m
+[0;32mI (455878) MODBUS: Register name: ORP[0m
+[0;31mE (455878) MODBUS: No response: device=1, register=0[0m
+[0;32mI (460878) MODBUS: Register name: TEMP[0m
+[0;31mE (460878) MODBUS: No response: device=1, register=1[0m
+[0;32mI (465878) MODBUS: Register name: COND[0m
+[0;31mE (465878) MODBUS: No response: device=1, register=2[0m
+[0;32mI (470878) MODBUS: Register name: TDS[0m
+[0;31mE (470878) MODBUS: No response: device=1, register=3[0m
+[0;32mI (475878) MODBUS: Register name: PH[0m
+[0;31mE (475878) MODBUS: No response: device=1, register=4[0m
+[0;32mI (480878) MODBUS: Register name: ORP[0m
+[0;31mE (480878) MODBUS: No response: device=2, register=0[0m
+[0;32mI (485878) MODBUS: Register name: TEMP[0m
+[0;31mE (485878) MODBUS: No response: device=2, register=1[0m
+[0;32mI (490878) MODBUS: Register name: COND[0m
+[0;31mE (490878) MODBUS: No response: device=2, register=2[0m
+[0;32mI (495878) MODBUS: Register name: TDS[0m
+[0;31mE (495878) MODBUS: No response: device=2, register=3[0m
+[0;32mI (500878) MODBUS: Register name: PH[0m
+[0;31mE (500878) MODBUS: No response: device=2, register=4[0m
+[0;32mI (505878) MODBUS: Register name: ORP[0m
+[0;31mE (505878) MODBUS: No response: device=3, register=0[0m
+[0;32mI (510878) MODBUS: Register name: TEMP[0m
+[0;31mE (510878) MODBUS: No response: device=3, register=1[0m
+[0;32mI (515878) MODBUS: Register name: COND[0m
+[0;31mE (515878) MODBUS: No response: device=3, register=2[0m
+[0;32mI (520878) MODBUS: Register name: TDS[0m
+[0;31mE (520878) MODBUS: No response: device=3, register=3[0m
+[0;32mI (525878) MODBUS: Register name: PH[0m
+[0;31mE (525878) MODBUS: No response: device=3, register=4[0m
+[0;32mI (525878) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (525938) MQTT: Payload queued successfully, msg_id=37560[0m
+[0;32mI (526138) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (540938) MODBUS: Register name: ORP[0m
+[0;31mE (540938) MODBUS: No response: device=0, register=0[0m
+[0;32mI (545938) MODBUS: Register name: TEMP[0m
+[0;31mE (545938) MODBUS: No response: device=0, register=1[0m
+[0;32mI (550938) MODBUS: Register name: COND[0m
+[0;31mE (550938) MODBUS: No response: device=0, register=2[0m
+[0;32mI (555938) MODBUS: Register name: TDS[0m
+[0;31mE (555938) MODBUS: No response: device=0, register=3[0m
+[0;32mI (560938) MODBUS: Register name: ORP[0m
+[0;31mE (560938) MODBUS: No response: device=1, register=0[0m
+[0;32mI (565938) MODBUS: Register name: TEMP[0m
+[0;31mE (565938) MODBUS: No response: device=1, register=1[0m
+[0;32mI (570938) MODBUS: Register name: COND[0m
+[0;31mE (570938) MODBUS: No response: device=1, register=2[0m
+[0;32mI (575938) MODBUS: Register name: TDS[0m
+[0;31mE (575938) MODBUS: No response: device=1, register=3[0m
+[0;32mI (580938) MODBUS: Register name: PH[0m
+[0;31mE (580938) MODBUS: No response: device=1, register=4[0m
+[0;32mI (585938) MODBUS: Register name: ORP[0m
+[0;31mE (585938) MODBUS: No response: device=2, register=0[0m
+[0;32mI (590938) MODBUS: Register name: TEMP[0m
+[0;31mE (590938) MODBUS: No response: device=2, register=1[0m
+[0;32mI (595938) MODBUS: Register name: COND[0m
+[0;31mE (595938) MODBUS: No response: device=2, register=2[0m
+[0;32mI (600938) MODBUS: Register name: TDS[0m
+[0;31mE (600938) MODBUS: No response: device=2, register=3[0m
+[0;32mI (605938) MODBUS: Register name: PH[0m
+[0;31mE (605938) MODBUS: No response: device=2, register=4[0m
+[0;32mI (610938) MODBUS: Register name: ORP[0m
+[0;31mE (610938) MODBUS: No response: device=3, register=0[0m
+[0;32mI (615938) MODBUS: Register name: TEMP[0m
+[0;31mE (615938) MODBUS: No response: device=3, register=1[0m
+[0;32mI (620938) MODBUS: Register name: COND[0m
+[0;31mE (620938) MODBUS: No response: device=3, register=2[0m
+[0;32mI (625938) MODBUS: Register name: TDS[0m
+[0;31mE (625938) MODBUS: No response: device=3, register=3[0m
+[0;32mI (630938) MODBUS: Register name: PH[0m
+[0;31mE (630938) MODBUS: No response: device=3, register=4[0m
+[0;32mI (630938) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (630998) MQTT: Payload queued successfully, msg_id=37562[0m
+[0;32mI (631198) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (645998) MODBUS: Register name: ORP[0m
+[0;31mE (645998) MODBUS: No response: device=0, register=0[0m
+[0;32mI (650998) MODBUS: Register name: TEMP[0m
+[0;31mE (650998) MODBUS: No response: device=0, register=1[0m
+[0;32mI (655998) MODBUS: Register name: COND[0m
+[0;31mE (655998) MODBUS: No response: device=0, register=2[0m
+[0;32mI (660998) MODBUS: Register name: TDS[0m
+[0;31mE (660998) MODBUS: No response: device=0, register=3[0m
+[0;32mI (665998) MODBUS: Register name: ORP[0m
+[0;31mE (665998) MODBUS: No response: device=1, register=0[0m
+[0;32mI (670998) MODBUS: Register name: TEMP[0m
+[0;31mE (670998) MODBUS: No response: device=1, register=1[0m
+[0;32mI (675998) MODBUS: Register name: COND[0m
+[0;31mE (675998) MODBUS: No response: device=1, register=2[0m
+[0;32mI (680998) MODBUS: Register name: TDS[0m
+[0;31mE (680998) MODBUS: No response: device=1, register=3[0m
+[0;32mI (685998) MODBUS: Register name: PH[0m
+[0;31mE (685998) MODBUS: No response: device=1, register=4[0m
+[0;32mI (690998) MODBUS: Register name: ORP[0m
+[0;31mE (690998) MODBUS: No response: device=2, register=0[0m
+[0;32mI (695998) MODBUS: Register name: TEMP[0m
+[0;31mE (695998) MODBUS: No response: device=2, register=1[0m
+[0;32mI (700998) MODBUS: Register name: COND[0m
+[0;31mE (700998) MODBUS: No response: device=2, register=2[0m
+[0;32mI (705998) MODBUS: Register name: TDS[0m
+[0;31mE (705998) MODBUS: No response: device=2, register=3[0m
+[0;32mI (710998) MODBUS: Register name: PH[0m
+[0;31mE (710998) MODBUS: No response: device=2, register=4[0m
+[0;32mI (715998) MODBUS: Register name: ORP[0m
+[0;31mE (715998) MODBUS: No response: device=3, register=0[0m
+[0;32mI (720998) MODBUS: Register name: TEMP[0m
+[0;31mE (720998) MODBUS: No response: device=3, register=1[0m
+[0;32mI (725998) MODBUS: Register name: COND[0m
+[0;31mE (725998) MODBUS: No response: device=3, register=2[0m
+[0;32mI (730998) MODBUS: Register name: TDS[0m
+[0;31mE (730998) MODBUS: No response: device=3, register=3[0m
+[0;32mI (735998) MODBUS: Register name: PH[0m
+[0;31mE (735998) MODBUS: No response: device=3, register=4[0m
+[0;32mI (735998) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (736058) MQTT: Payload queued successfully, msg_id=63916[0m
+[0;32mI (736258) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (751058) MODBUS: Register name: ORP[0m
+[0;31mE (751058) MODBUS: No response: device=0, register=0[0m
+[0;32mI (756058) MODBUS: Register name: TEMP[0m
+[0;31mE (756058) MODBUS: No response: device=0, register=1[0m
+[0;32mI (761058) MODBUS: Register name: COND[0m
+[0;31mE (761058) MODBUS: No response: device=0, register=2[0m
+[0;32mI (766058) MODBUS: Register name: TDS[0m
+[0;31mE (766058) MODBUS: No response: device=0, register=3[0m
+[0;32mI (771058) MODBUS: Register name: ORP[0m
+[0;31mE (771058) MODBUS: No response: device=1, register=0[0m
+[0;32mI (776058) MODBUS: Register name: TEMP[0m
+[0;31mE (776058) MODBUS: No response: device=1, register=1[0m
+[0;32mI (781058) MODBUS: Register name: COND[0m
+[0;31mE (781058) MODBUS: No response: device=1, register=2[0m
+[0;32mI (786058) MODBUS: Register name: TDS[0m
+[0;31mE (786058) MODBUS: No response: device=1, register=3[0m
+[0;32mI (791058) MODBUS: Register name: PH[0m
+[0;31mE (791058) MODBUS: No response: device=1, register=4[0m
+[0;32mI (796058) MODBUS: Register name: ORP[0m
+[0;31mE (796058) MODBUS: No response: device=2, register=0[0m
+[0;32mI (801058) MODBUS: Register name: TEMP[0m
+[0;31mE (801058) MODBUS: No response: device=2, register=1[0m
+[0;32mI (806058) MODBUS: Register name: COND[0m
+[0;31mE (806058) MODBUS: No response: device=2, register=2[0m
+[0;32mI (811058) MODBUS: Register name: TDS[0m
+[0;31mE (811058) MODBUS: No response: device=2, register=3[0m
+[0;32mI (816058) MODBUS: Register name: PH[0m
+[0;31mE (816058) MODBUS: No response: device=2, register=4[0m
+[0;32mI (821058) MODBUS: Register name: ORP[0m
+[0;31mE (821058) MODBUS: No response: device=3, register=0[0m
+[0;32mI (826058) MODBUS: Register name: TEMP[0m
+[0;31mE (826058) MODBUS: No response: device=3, register=1[0m
+[0;32mI (831058) MODBUS: Register name: COND[0m
+[0;31mE (831058) MODBUS: No response: device=3, register=2[0m
+[0;32mI (836058) MODBUS: Register name: TDS[0m
+[0;31mE (836058) MODBUS: No response: device=3, register=3[0m
+[0;32mI (841058) MODBUS: Register name: PH[0m
+[0;31mE (841058) MODBUS: No response: device=3, register=4[0m
+[0;32mI (841058) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (841118) MQTT: Payload queued successfully, msg_id=33164[0m
+[0;32mI (843368) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (856118) MODBUS: Register name: ORP[0m
+[0;31mE (856118) MODBUS: No response: device=0, register=0[0m
+[0;32mI (861118) MODBUS: Register name: TEMP[0m
+[0;31mE (861118) MODBUS: No response: device=0, register=1[0m
+[0;32mI (866118) MODBUS: Register name: COND[0m
+[0;31mE (866118) MODBUS: No response: device=0, register=2[0m
+[0;32mI (871118) MODBUS: Register name: TDS[0m
+[0;31mE (871118) MODBUS: No response: device=0, register=3[0m
+[0;32mI (876118) MODBUS: Register name: ORP[0m
+[0;31mE (876118) MODBUS: No response: device=1, register=0[0m
+[0;32mI (881118) MODBUS: Register name: TEMP[0m
+[0;31mE (881118) MODBUS: No response: device=1, register=1[0m
+[0;32mI (886118) MODBUS: Register name: COND[0m
+[0;31mE (886118) MODBUS: No response: device=1, register=2[0m
+[0;32mI (891118) MODBUS: Register name: TDS[0m
+[0;31mE (891118) MODBUS: No response: device=1, register=3[0m
+[0;32mI (896118) MODBUS: Register name: PH[0m
+[0;31mE (896118) MODBUS: No response: device=1, register=4[0m
+[0;32mI (901118) MODBUS: Register name: ORP[0m
+[0;31mE (901118) MODBUS: No response: device=2, register=0[0m
+[0;32mI (906118) MODBUS: Register name: TEMP[0m
+[0;31mE (906118) MODBUS: No response: device=2, register=1[0m
+[0;32mI (911118) MODBUS: Register name: COND[0m
+[0;31mE (911118) MODBUS: No response: device=2, register=2[0m
+[0;32mI (916118) MODBUS: Register name: TDS[0m
+[0;31mE (916118) MODBUS: No response: device=2, register=3[0m
+[0;32mI (921118) MODBUS: Register name: PH[0m
+[0;31mE (921118) MODBUS: No response: device=2, register=4[0m
+[0;32mI (926118) MODBUS: Register name: ORP[0m
+[0;31mE (926118) MODBUS: No response: device=3, register=0[0m
+[0;32mI (931118) MODBUS: Register name: TEMP[0m
+[0;31mE (931118) MODBUS: No response: device=3, register=1[0m
+[0;32mI (936118) MODBUS: Register name: COND[0m
+[0;31mE (936118) MODBUS: No response: device=3, register=2[0m
+[0;32mI (941118) MODBUS: Register name: TDS[0m
+[0;31mE (941118) MODBUS: No response: device=3, register=3[0m
+[0;32mI (946118) MODBUS: Register name: PH[0m
+[0;31mE (946118) MODBUS: No response: device=3, register=4[0m
+[0;32mI (946118) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (946178) MQTT: Payload queued successfully, msg_id=54631[0m
+[0;32mI (946378) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (961178) MODBUS: Register name: ORP[0m
+[0;31mE (961178) MODBUS: No response: device=0, register=0[0m
+[0;32mI (966178) MODBUS: Register name: TEMP[0m
+[0;31mE (966178) MODBUS: No response: device=0, register=1[0m
+[0;32mI (971178) MODBUS: Register name: COND[0m
+[0;31mE (971178) MODBUS: No response: device=0, register=2[0m
+[0;32mI (976178) MODBUS: Register name: TDS[0m
+[0;31mE (976178) MODBUS: No response: device=0, register=3[0m
+[0;32mI (981178) MODBUS: Register name: ORP[0m
+[0;31mE (981178) MODBUS: No response: device=1, register=0[0m
+[0;32mI (986178) MODBUS: Register name: TEMP[0m
+[0;31mE (986178) MODBUS: No response: device=1, register=1[0m
+[0;32mI (991178) MODBUS: Register name: COND[0m
+[0;31mE (991178) MODBUS: No response: device=1, register=2[0m
+[0;32mI (996178) MODBUS: Register name: TDS[0m
+[0;31mE (996178) MODBUS: No response: device=1, register=3[0m
+[0;32mI (1001178) MODBUS: Register name: PH[0m
+[0;31mE (1001178) MODBUS: No response: device=1, register=4[0m
+[0;32mI (1006178) MODBUS: Register name: ORP[0m
+[0;31mE (1006178) MODBUS: No response: device=2, register=0[0m
+[0;32mI (1011178) MODBUS: Register name: TEMP[0m
+[0;31mE (1011178) MODBUS: No response: device=2, register=1[0m
+[0;32mI (1016178) MODBUS: Register name: COND[0m
+[0;31mE (1016178) MODBUS: No response: device=2, register=2[0m
+[0;32mI (1021178) MODBUS: Register name: TDS[0m
+[0;31mE (1021178) MODBUS: No response: device=2, register=3[0m
+[0;32mI (1026178) MODBUS: Register name: PH[0m
+[0;31mE (1026178) MODBUS: No response: device=2, register=4[0m
+[0;32mI (1031178) MODBUS: Register name: ORP[0m
+[0;31mE (1031178) MODBUS: No response: device=3, register=0[0m
+[0;32mI (1036178) MODBUS: Register name: TEMP[0m
+[0;31mE (1036178) MODBUS: No response: device=3, register=1[0m
+[0;32mI (1041178) MODBUS: Register name: COND[0m
+[0;31mE (1041178) MODBUS: No response: device=3, register=2[0m
+[0;32mI (1046178) MODBUS: Register name: TDS[0m
+[0;31mE (1046178) MODBUS: No response: device=3, register=3[0m
+[0;32mI (1051178) MODBUS: Register name: PH[0m
+[0;31mE (1051178) MODBUS: No response: device=3, register=4[0m
+[0;32mI (1051178) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (1051238) MQTT: Payload queued successfully, msg_id=51202[0m
+[0;32mI (1051448) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (1066238) MODBUS: Register name: ORP[0m
+[0;31mE (1066238) MODBUS: No response: device=0, register=0[0m
+[0;32mI (1071238) MODBUS: Register name: TEMP[0m
+[0;31mE (1071238) MODBUS: No response: device=0, register=1[0m
+[0;32mI (1076238) MODBUS: Register name: COND[0m
+[0;31mE (1076238) MODBUS: No response: device=0, register=2[0m
+[0;32mI (1081238) MODBUS: Register name: TDS[0m
+[0;31mE (1081238) MODBUS: No response: device=0, register=3[0m
+[0;32mI (1086238) MODBUS: Register name: ORP[0m
+[0;31mE (1086238) MODBUS: No response: device=1, register=0[0m
+[0;32mI (1091238) MODBUS: Register name: TEMP[0m
+[0;31mE (1091238) MODBUS: No response: device=1, register=1[0m
+[0;32mI (1096238) MODBUS: Register name: COND[0m
+[0;31mE (1096238) MODBUS: No response: device=1, register=2[0m
+[0;32mI (1101238) MODBUS: Register name: TDS[0m
+[0;31mE (1101238) MODBUS: No response: device=1, register=3[0m
+[0;32mI (1106238) MODBUS: Register name: PH[0m
+[0;31mE (1106238) MODBUS: No response: device=1, register=4[0m
+[0;32mI (1111238) MODBUS: Register name: ORP[0m
+[0;31mE (1111238) MODBUS: No response: device=2, register=0[0m
+[0;32mI (1116238) MODBUS: Register name: TEMP[0m
+[0;31mE (1116238) MODBUS: No response: device=2, register=1[0m
+[0;32mI (1121238) MODBUS: Register name: COND[0m
+[0;31mE (1121238) MODBUS: No response: device=2, register=2[0m
+[0;32mI (1126238) MODBUS: Register name: TDS[0m
+[0;31mE (1126238) MODBUS: No response: device=2, register=3[0m
+[0;32mI (1131238) MODBUS: Register name: PH[0m
+[0;31mE (1131238) MODBUS: No response: device=2, register=4[0m
+[0;32mI (1136238) MODBUS: Register name: ORP[0m
+[0;31mE (1136238) MODBUS: No response: device=3, register=0[0m
+[0;32mI (1141238) MODBUS: Register name: TEMP[0m
+[0;31mE (1141238) MODBUS: No response: device=3, register=1[0m
+[0;32mI (1146238) MODBUS: Register name: COND[0m
+[0;31mE (1146238) MODBUS: No response: device=3, register=2[0m
+[0;32mI (1151238) MODBUS: Register name: TDS[0m
+[0;31mE (1151238) MODBUS: No response: device=3, register=3[0m
+[0;32mI (1156238) MODBUS: Register name: PH[0m
+[0;31mE (1156238) MODBUS: No response: device=3, register=4[0m
+[0;32mI (1156238) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (1156298) MQTT: Payload queued successfully, msg_id=45780[0m
+[0;32mI (1156508) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (1171298) MODBUS: Register name: ORP[0m
+[0;31mE (1171298) MODBUS: No response: device=0, register=0[0m
+[0;32mI (1176298) MODBUS: Register name: TEMP[0m
+[0;31mE (1176298) MODBUS: No response: device=0, register=1[0m
+[0;32mI (1181298) MODBUS: Register name: COND[0m
+[0;31mE (1181298) MODBUS: No response: device=0, register=2[0m
+[0;32mI (1186298) MODBUS: Register name: TDS[0m
+[0;31mE (1186298) MODBUS: No response: device=0, register=3[0m
+[0;32mI (1191298) MODBUS: Register name: ORP[0m
+[0;31mE (1191298) MODBUS: No response: device=1, register=0[0m
+[0;32mI (1196298) MODBUS: Register name: TEMP[0m
+[0;31mE (1196298) MODBUS: No response: device=1, register=1[0m
+[0;32mI (1201298) MODBUS: Register name: COND[0m
+[0;31mE (1201298) MODBUS: No response: device=1, register=2[0m
+[0;32mI (1206298) MODBUS: Register name: TDS[0m
+[0;31mE (1206298) MODBUS: No response: device=1, register=3[0m
+[0;32mI (1211298) MODBUS: Register name: PH[0m
+[0;31mE (1211298) MODBUS: No response: device=1, register=4[0m
+[0;32mI (1216298) MODBUS: Register name: ORP[0m
+[0;31mE (1216298) MODBUS: No response: device=2, register=0[0m
+[0;32mI (1221298) MODBUS: Register name: TEMP[0m
+[0;31mE (1221298) MODBUS: No response: device=2, register=1[0m
+[0;32mI (1226298) MODBUS: Register name: COND[0m
+[0;31mE (1226298) MODBUS: No response: device=2, register=2[0m
+[0;32mI (1231298) MODBUS: Register name: TDS[0m
+[0;31mE (1231298) MODBUS: No response: device=2, register=3[0m
+[0;32mI (1236298) MODBUS: Register name: PH[0m
+[0;31mE (1236298) MODBUS: No response: device=2, register=4[0m
+[0;32mI (1241298) MODBUS: Register name: ORP[0m
+[0;31mE (1241298) MODBUS: No response: device=3, register=0[0m
+[0;32mI (1246298) MODBUS: Register name: TEMP[0m
+[0;31mE (1246298) MODBUS: No response: device=3, register=1[0m
+[0;32mI (1251298) MODBUS: Register name: COND[0m
+[0;31mE (1251298) MODBUS: No response: device=3, register=2[0m
+[0;32mI (1256298) MODBUS: Register name: TDS[0m
+[0;31mE (1256298) MODBUS: No response: device=3, register=3[0m
+[0;32mI (1261298) MODBUS: Register name: PH[0m
+[0;31mE (1261298) MODBUS: No response: device=3, register=4[0m
+[0;32mI (1261298) MQTT: Payload: {"Device_count":4,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":1,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":69,"Device_Name":"Temp_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]},{"Device_no":89,"Device_Name":"COND_Sensor","Register_Name":["ORP","TEMP","COND","TDS","PH"],"Status":["FAIL","FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0,0]}]}[0m
+[0;32mI (1261358) MQTT: Payload queued successfully, msg_id=14645[0m
+[0;32mI (1261568) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (1276358) MODBUS: Register name: ORP[0m
+[0;31mE (1276358) MODBUS: No response: device=0, register=0[0m

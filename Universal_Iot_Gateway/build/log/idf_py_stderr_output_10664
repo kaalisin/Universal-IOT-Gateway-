@@ -1,0 +1,13 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4200d122: [0;33mcreate_mqtt_payload[0m[0m at [0;32mE:/Bits Pilani Project/Universal_Iot_Gateway/main/main.c[0m[0m:[1;31m2209[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4200d11f: [0;33mcreate_mqtt_payload[0m[0m at [0;32mE:/Bits Pilani Project/Universal_Iot_Gateway/main/main.c[0m[0m:[1;31m2210[0m
+[0m--- 0x4200eced: [0;33mapp_main[0m[0m at [0;32mE:/Bits Pilani Project/Universal_Iot_Gateway/main/main.c[0m[0m:[1;31m270[0m
+[0m--- 0x420a9e84: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037df4d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b80: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m

@@ -1,0 +1,408 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 11 2026 11:34:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: Defaulting to factory image[0m
+[0;32mI (103) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=3acf4h (240884) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0005ad1c vaddr=3fc9a600 size=0496ch ( 18796) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0005f690 vaddr=40374000 size=00988h (  2440) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=ab484h (701572) map[0m
+[0;32mI (295) esp_image: segment 4: paddr=0010b4ac vaddr=40374988 size=15b6ch ( 88940) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (336) cpu_start: Multicore app[0m
+[0;32mI (345) cpu_start: Pro cpu start user code[0m
+[0;32mI (345) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (346) app_init: Application information:[0m
+[0;32mI (348) app_init: Project name:     app-template[0m
+[0;32mI (354) app_init: App version:      a5840fd-dirty[0m
+[0;32mI (359) app_init: Compile time:     Oct 12 2026 11:12:19[0m
+[0;32mI (365) app_init: ELF file SHA256:  e853d20cc...[0m
+[0;32mI (370) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (376) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (380) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (385) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FCA3788 len 00045F88 (279 KiB): RAM[0m
+[0;32mI (403) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (410) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (416) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (423) spi_flash: detected chip: generic[0m
+[0;32mI (427) spi_flash: flash io: dio[0m
+[0;33mW (431) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (451) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (478) main_task: Calling app_main()[0m
+[0;32mI (498) NVS: Wi-Fi credentials loaded successfully[0m
+[0;32mI (508) pp: pp rom version: e7ae62f[0m
+[0;32mI (508) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (518) wifi:wifi driver task: 3fcadd38, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formating: disabled[0m
+[0;32mI (528) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (538) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (548) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (548) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp tx win: 5760[0m
+[0;32mI (588) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (598) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (608) WI-FI: Credentials available. Connecting to Wi-Fi[0m
+[0;33mW (608) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (618) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (668) wifi:mode : sta (7c:df:a1:e2:d7:98)[0m
+[0;32mI (668) wifi:enable tsf[0m
+[0;32mI (698) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (698) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (768) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (798) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (808) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (818) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (818) WIFI: STAT DISCONNECTED[0m
+[0;32mI (818) WIFI:: DISCONNECT COUNT = 1[0m
+[0;32mI (3228) WIFI: STAT DISCONNECTED[0m
+[0;32mI (3228) WIFI:: DISCONNECT COUNT = 2[0m
+[0;32mI (3248) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3258) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3298) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3368) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8008) wifi:connected with vivo Y400 Pro 5G, aid = 1, channel 11, BW20, bssid = e2:f6:18:a0:f1:d6[0m
+[0;32mI (8018) wifi:security: WPA2-PSK, phy: bgn, rssi: -88[0m
+[0;32mI (8018) wifi:pm start, type: 1[0m
+
+[0;32mI (8018) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8028) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (8038) WIFI: STAT CONNECTED[0m
+[0;32mI (8048) wifi:<ba-add>idx:0 (ifx:0, e2:f6:18:a0:f1:d6), tid:6, ssn:4, winSize:64[0m
+[0;32mI (8068) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8068) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (8108) wifi:<ba-add>idx:1 (ifx:0, e2:f6:18:a0:f1:d6), tid:0, ssn:4, winSize:64[0m
+[0;32mI (9038) esp_netif_handlers: sta ip: 10.47.123.77, mask: 255.255.255.0, gw: 10.47.123.221[0m
+[0;32mI (9038) WIFI: Got IP: 10.47.123.77[0m
+[0;32mI (10668) MQTT: DEFAULT CASE EXECUTE[0m
+[0;32mI (12238) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (13198) MQTT: CONNECTED[0m
+[0;32mI (13398) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (13598) MQTT: SUBSCRIBED DATA[0m
+[0;32mI (66238) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (66238) MQTT: Received 353/353 bytes[0m
+Complete Data = {"Device_count": 1, "Devices": [{"Device_no": 1, "Slave_ID": "0x01", "Function_ID": "0x03", "Device_Name": "ORP", "Register_Count": 2, "Register_Name": ["ORP", "Temp"], "Register_Address": ["0x0000", "0x0001"], "Quantity": [1, 1], "Data_Type": ["uint16", "uint16"], "Byte_Order": ["ABCD", "ABCD"], "Offset": [0, 0], "Slope": [1, 1], "Decimal": [0, 2]}]}
+Device count = 1
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 0.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 0
+ , index = 0
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = Temp
+, index = 1Register Address = 0x0001
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 0.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 2
+ , index = 1
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 01 00 01 D5 CA 
+[0;32mI (70668) MAIN: Taking config mutex[0m
+[0;32mI (70668) MAIN: Config mutex acquired[0m
+[0;32mI (70668) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (75698) MODBUS: Register name: ORP[0m
+[0;32mI (80728) MODBUS: Register name: Temp[0m
+[0;32mI (80728) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[254,2.92]}]}[0m
+[0;32mI (80728) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (80738) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (80748) MQTT: Checking payload[0m
+[0;32mI (80748) MQTT: Payload length: 147[0m
+[0;32mI (80748) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (80758) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (80758) MQTT: Payload queued successfully, msg_id=65467[0m
+[0;32mI (80768) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (83028) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (90778) MAIN: Taking config mutex[0m
+[0;32mI (90778) MAIN: Config mutex acquired[0m
+[0;32mI (90778) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (91228) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (91228) MQTT: Received 353/353 bytes[0m
+Complete Data = {"Device_count": 1, "Devices": [{"Device_no": 1, "Slave_ID": "0x01", "Function_ID": "0x03", "Device_Name": "ORP", "Register_Count": 2, "Register_Name": ["ORP", "Temp"], "Register_Address": ["0x0000", "0x0001"], "Quantity": [1, 1], "Data_Type": ["uint16", "uint16"], "Byte_Order": ["ABCD", "ABCD"], "Offset": [0, 0], "Slope": [1, 1], "Decimal": [0, 1]}]}
+Device count = 1
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 0.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 0
+ , index = 0
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = Temp
+, index = 1Register Address = 0x0001
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 0.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+[0;32mI (95808) MODBUS: Register name: ORP[0m
+[0;32mI (100838) MODBUS: Register name: Temp[0m
+[0;32mI (100838) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[254,2.91]}]}[0m
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 01 00 01 D5 CA 
+[0;32mI (100858) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (100858) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (100868) MQTT: Checking payload[0m
+[0;32mI (100868) MQTT: Payload length: 147[0m
+[0;32mI (100878) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (100878) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (100888) MQTT: Payload queued successfully, msg_id=62756[0m
+[0;32mI (100888) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (101258) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (110898) MAIN: Taking config mutex[0m
+[0;32mI (110898) MAIN: Config mutex acquired[0m
+[0;32mI (110898) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (115928) MODBUS: Register name: ORP[0m
+[0;32mI (120958) MODBUS: Register name: Temp[0m
+[0;32mI (120958) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29.1]}]}[0m
+[0;32mI (120968) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (120968) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (120978) MQTT: Checking payload[0m
+[0;32mI (120978) MQTT: Payload length: 147[0m
+[0;32mI (120978) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (120988) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (120988) MQTT: Payload queued successfully, msg_id=15129[0m
+[0;32mI (120998) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (122968) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (131008) MAIN: Taking config mutex[0m
+[0;32mI (131008) MAIN: Config mutex acquired[0m
+[0;32mI (131008) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (136038) MODBUS: Register name: ORP[0m
+[0;32mI (141068) MODBUS: Register name: Temp[0m
+[0;32mI (141068) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29.1]}]}[0m
+[0;32mI (141078) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (141078) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (141088) MQTT: Checking payload[0m
+[0;32mI (141088) MQTT: Payload length: 147[0m
+[0;32mI (141088) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (141098) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (141098) MQTT: Payload queued successfully, msg_id=33287[0m
+[0;32mI (141108) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (141408) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (151118) MAIN: Taking config mutex[0m
+[0;32mI (151118) MAIN: Config mutex acquired[0m
+[0;32mI (151118) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (156148) MODBUS: Register name: ORP[0m
+[0;32mI (161178) MODBUS: Register name: Temp[0m
+[0;32mI (161178) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29.1]}]}[0m
+[0;32mI (161188) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (161188) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (161198) MQTT: Checking payload[0m
+[0;32mI (161198) MQTT: Payload length: 147[0m
+[0;32mI (161198) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (161208) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (161208) MQTT: Payload queued successfully, msg_id=61788[0m
+[0;32mI (161218) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (161338) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (171228) MAIN: Taking config mutex[0m
+[0;32mI (171228) MAIN: Config mutex acquired[0m
+[0;32mI (171228) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (176258) MODBUS: Register name: ORP[0m
+[0;32mI (181288) MODBUS: Register name: Temp[0m
+[0;32mI (181288) MQTT: Payload: {"Device_count":1,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29]}]}[0m
+[0;32mI (181288) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (181298) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (181308) MQTT: Checking payload[0m
+[0;32mI (181308) MQTT: Payload length: 145[0m
+[0;32mI (181308) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (181318) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (181318) MQTT: Payload queued successfully, msg_id=54353[0m
+[0;32mI (181328) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (182968) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (182968) MQTT: Received 631/631 bytes[0m
+Complete Data = {"Device_count": 2, "Devices": [{"Device_no": 1, "Slave_ID": "0x01", "Function_ID": "0x03", "Device_Name": "ORP", "Register_Count": 2, "Register_Name": ["ORP", "Temp"], "Register_Address": ["0x0000", "0x0001"], "Quantity": [1, 1], "Data_Type": ["uint16", "uint16"], "Byte_Order": ["ABCD", "ABCD"], "Offset": [0, 0], "Slope": [1, 1], "Decimal": [0, 1]}, {"Device_no": 2, "Slave_ID": "0x01", "Function_ID": "0x03", "Device_Name": "PH", "Register_Count": 1, "Register_Name": ["Register1"], "Register_Address": ["0x0002"], "Quantity": [1], "Data_Type": ["uint16"], "Byte_Order": ["ABCD"], "Offset": [1], "Slope": [1], "Decimal": [2]}]}
+Device count = 2
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 0.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 0
+ , index = 0
+
+Device 1
+Device No     = 1
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = Temp
+, index = 1Register Address = 0x0001
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 0.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 2
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = Register1
+, index = 0Register Address = 0x0002
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 2
+ , index = 0
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 01 00 01 D5 CA 
+
+Device 2, Register 1 - Modbus Command: 01 03 00 02 00 01 25 CA 
+[0;32mI (183178) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (191338) MAIN: Taking config mutex[0m
+[0;32mI (191338) MAIN: Config mutex acquired[0m
+[0;32mI (191338) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (196368) MODBUS: Register name: ORP[0m
+[0;32mI (201388) MODBUS: Register name: Temp[0m
+[0;32mI (206418) MODBUS: Register name: Register1[0m
+[0;32mI (206418) MQTT: Payload: {"Device_count":2,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29]},{"Device_no":2,"Device_Name":"PH","Register_Name":["Register1"],"Status":["Success"],"Value":[23.12]}]}[0m
+[0;32mI (206428) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (206438) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (206438) MQTT: Checking payload[0m
+[0;32mI (206448) MQTT: Payload length: 247[0m
+[0;32mI (206448) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (206458) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (206458) MQTT: Payload queued successfully, msg_id=35292[0m
+[0;32mI (206468) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (206728) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (216478) MAIN: Taking config mutex[0m
+[0;32mI (216478) MAIN: Config mutex acquired[0m
+[0;32mI (216478) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (221508) MODBUS: Register name: ORP[0m
+[0;32mI (226538) MODBUS: Register name: Temp[0m
+[0;32mI (231568) MODBUS: Register name: Register1[0m
+[0;32mI (231568) MQTT: Payload: {"Device_count":2,"Devices":[{"Device_no":1,"Device_Name":"ORP","Register_Name":["ORP","Temp"],"Status":["Success","Success"],"Value":[255,29]},{"Device_no":2,"Device_Name":"PH","Register_Name":["Register1"],"Status":["Success"],"Value":[23.12]}]}[0m
+[0;32mI (231578) MAIN: Calling publish_mqtt_payload()[0m
+[0;32mI (231588) MQTT: Entered publish_mqtt_payload()[0m
+[0;32mI (231588) MQTT: Checking payload[0m
+[0;32mI (231598) MQTT: Payload length: 247[0m
+[0;32mI (231598) MQTT: Before esp_mqtt_client_publish()[0m
+[0;32mI (231608) MQTT: After esp_mqtt_client_publish()[0m
+[0;32mI (231608) MQTT: Payload queued successfully, msg_id=42488[0m
+[0;32mI (231618) MAIN: publish_mqtt_payload() completed[0m
+[0;32mI (231918) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (241628) MAIN: Taking config mutex[0m
+[0;32mI (241628) MAIN: Config mutex acquired[0m
+[0;32mI (241628) MAIN: Calling Modbus_sensor_response()[0m
+[0;32mI (246658) MODBUS: Register name: ORP[0m

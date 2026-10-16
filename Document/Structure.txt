@@ -1,0 +1,30 @@
+typedef struct 
+{
+    // Fixed Variable per Sensor
+    uint8_t device_no;
+    uint8_t slave_id;
+    uint8_t function_id;
+    char Device_Name[10];
+    uint8_t register_cnt;
+// Variable as per the Register Count
+    char     **Register_Name;
+    uint64_t *Register_address;
+    uint8_t *Quantity;
+    uint8_t *data_type;
+    uint8_t *byte_order;
+    float   *offset;
+    float   *slope;
+    uint8_t *decimal;
+}MODBUS_CONFIG;;
+
+
+
+typedef struct{
+    // Fixed variable per sensor
+    uint8_t device_no;
+    char device_name[10];
+    // Variable as per register count
+    char **register_Name;
+    char *result;
+    double *value;
+}PAYLOAD;

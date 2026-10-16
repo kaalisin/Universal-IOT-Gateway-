@@ -1,0 +1,20 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40375bd2: [0;33mpanic_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c[0m[0m:[1;31m463[0m
+[0m--- 0x4037d385: [0;33mesp_system_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m92[0m
+[0m--- 0x40385821: [0;33m__assert_func[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x403764c1: [0;33mheap_caps_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c[0m[0m:[1;31m69[0m
+[0m--- 0x40385851: [0;33mfree[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/heap.c[0m[0m:[1;31m39[0m
+[0m--- 0x4200f045: [0;33mfree_modbus_config[0m[0m at [0;32mE:/Bits Pilani Project/Universal_Iot_Gateway/main/main.c[0m[0m:[1;31m2615[0m
+[0m--- 0x42010003: [0;33mmqtt_event_handler[0m[0m at [0;32mE:/Bits Pilani Project/Universal_Iot_Gateway/main/main.c[0m[0m:[1;31m1116[0m
+[0m--- 0x420a7e7d: [0;33mhandler_execute[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c[0m[0m:[1;31m135[0m
+[0m--- 0x420a78f2: [0;33mesp_event_loop_run[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c[0m[0m:[1;31m584[0m
+[0m--- 0x4201030e: [0;33mesp_mqtt_dispatch_event[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m1032[0m
+[0m--- 0x42010ee4: [0;33mdeliver_publish[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m1099[0m
+[0m--- 0x4201105f: [0;33mmqtt_process_receive[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m1377[0m
+[0m--- 0x420115d4: [0;33mesp_mqtt_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m1657[0m
+[0m--- 0x4037df4d: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b80: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m

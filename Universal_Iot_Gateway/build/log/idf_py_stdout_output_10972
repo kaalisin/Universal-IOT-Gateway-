@@ -1,0 +1,468 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 11 2026 11:34:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: Defaulting to factory image[0m
+[0;32mI (103) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=3aaa4h (240292) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0005aacc vaddr=3fc9a600 size=0496ch ( 18796) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0005f440 vaddr=40374000 size=00bd8h (  3032) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=ab488h (701576) map[0m
+[0;32mI (295) esp_image: segment 4: paddr=0010b4b0 vaddr=40374bd8 size=1591ch ( 88348) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (336) cpu_start: Multicore app[0m
+[0;32mI (345) cpu_start: Pro cpu start user code[0m
+[0;32mI (345) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (345) app_init: Application information:[0m
+[0;32mI (348) app_init: Project name:     app-template[0m
+[0;32mI (353) app_init: App version:      f28ea0c-dirty[0m
+[0;32mI (359) app_init: Compile time:     Oct 11 2026 11:34:21[0m
+[0;32mI (365) app_init: ELF file SHA256:  b3d8a2c15...[0m
+[0;32mI (370) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (375) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (380) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (385) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FCA3788 len 00045F88 (279 KiB): RAM[0m
+[0;32mI (403) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (409) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (415) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (423) spi_flash: detected chip: generic[0m
+[0;32mI (426) spi_flash: flash io: dio[0m
+[0;33mW (430) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (444) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (450) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (458) main_task: Started on CPU0[0m
+[0;32mI (478) main_task: Calling app_main()[0m
+[0;32mI (498) NVS: Wi-Fi credentials loaded successfully[0m
+[0;32mI (508) pp: pp rom version: e7ae62f[0m
+[0;32mI (508) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (518) wifi:wifi driver task: 3fcadd38, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formating: disabled[0m
+[0;32mI (528) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (538) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (548) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (548) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp tx win: 5760[0m
+[0;32mI (588) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (598) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (608) WI-FI: Credentials available. Connecting to Wi-Fi[0m
+[0;33mW (608) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (618) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (668) wifi:mode : sta (7c:df:a1:e2:d7:98)[0m
+[0;32mI (668) wifi:enable tsf[0m
+[0;32mI (678) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (678) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (718) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (738) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (778) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (798) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (798) WIFI: STAT DISCONNECTED[0m
+[0;32mI (798) WIFI:: DISCONNECT COUNT = 1[0m
+[0;32mI (3208) WIFI: STAT DISCONNECTED[0m
+[0;32mI (3208) WIFI:: DISCONNECT COUNT = 2[0m
+[0;32mI (3218) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3218) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3248) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3268) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3318) wifi:connected with vivo Y400 Pro 5G, aid = 1, channel 11, BW20, bssid = 9e:4f:5e:44:78:56[0m
+[0;32mI (3318) wifi:security: WPA2-PSK, phy: bgn, rssi: -84[0m
+[0;32mI (3318) wifi:pm start, type: 1[0m
+
+[0;32mI (3328) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3328) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3338) WIFI: STAT CONNECTED[0m
+[0;32mI (3458) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3458) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4338) esp_netif_handlers: sta ip: 10.47.123.77, mask: 255.255.255.0, gw: 10.47.123.221[0m
+[0;32mI (4338) WIFI: Got IP: 10.47.123.77[0m
+[0;32mI (10678) MQTT: DEFAULT CASE EXECUTE[0m
+[0;32mI (11158) wifi:<ba-add>idx:0 (ifx:0, 9e:4f:5e:44:78:56), tid:0, ssn:4, winSize:64[0m
+[0;32mI (11568) wifi:<ba-add>idx:1 (ifx:0, 9e:4f:5e:44:78:56), tid:6, ssn:10, winSize:64[0m
+[0;32mI (11618) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (12578) MQTT: CONNECTED[0m
+[0;32mI (12778) MQTT: PUBLISHED PAYLOAD[0m
+[0;32mI (12988) MQTT: SUBSCRIBED DATA[0m
+[0;32mI (41858) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (41868) MQTT: Received 989/1114 bytes[0m
+[0;32mI (41868) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (41868) MQTT: Received 1114/1114 bytes[0m
+Complete Data = {
+  "Device_count": 1,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },
+      {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1]
+    }
+  ]
+}
+Device count = 1
+ERROR: Device count mismatch
+Device_count = 1, Array count = 2
+[0;32mI (49648) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (49648) MQTT: Received 989/1114 bytes[0m
+[0;32mI (49648) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (49658) MQTT: Received 1114/1114 bytes[0m
+Complete Data = {
+  "Device_count": 2,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },
+      {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1]
+    }
+  ]
+}
+Device count = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 1
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 2
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = ORP
+, index = 0Register Address = 0x0000
+ , index = 0Quantity = 1
+, index = 0
+Data Type     = 3
+ , index = 0
+Byte Order    = 1
+ , index = 0
+Offset        = 1.00
+ , index = 0
+Scale         = 1.00
+ , index = 0
+Decimal  = 1
+ , index = 0
+
+Device 2
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TEMP
+, index = 1Register Address = 0x0002
+ , index = 1Quantity = 1
+, index = 1
+Data Type     = 3
+ , index = 1
+Byte Order    = 1
+ , index = 1
+Offset        = 1.00
+ , index = 1
+Scale         = 1.00
+ , index = 1
+Decimal  = 1
+ , index = 1
+
+Device 2
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = COND
+, index = 2Register Address = 0x0003
+ , index = 2Quantity = 1
+, index = 2
+Data Type     = 3
+ , index = 2
+Byte Order    = 1
+ , index = 2
+Offset        = 1.00
+ , index = 2
+Scale         = 1.00
+ , index = 2
+Decimal  = 1
+ , index = 2
+
+Device 2
+Device No     = 3
+Slave ID      = 0x01
+Function ID   = 0x03
+Register Name = TDS
+, index = 3Register Address = 0x0004
+ , index = 3Quantity = 1
+, index = 3
+Data Type     = 3
+ , index = 3
+Byte Order    = 1
+ , index = 3
+Offset        = 1.00
+ , index = 3
+Scale         = 1.00
+ , index = 3
+Decimal  = 1
+ , index = 3
+
+Device 1, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 1, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 1, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 1, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+
+Device 2, Register 1 - Modbus Command: 01 03 00 00 00 01 84 0A 
+
+Device 2, Register 2 - Modbus Command: 01 03 00 02 00 01 25 CA 
+
+Device 2, Register 3 - Modbus Command: 01 03 00 03 00 01 74 0A 
+
+Device 2, Register 4 - Modbus Command: 01 03 00 04 00 01 C5 CB 
+[0;32mI (55678) MODBUS: Register name: ORP[0m
+[0;31mE (55678) MODBUS: No response: device=0, register=0[0m
+[0;32mI (60678) MODBUS: Register name: TEMP[0m
+[0;31mE (60678) MODBUS: No response: device=0, register=1[0m
+[0;32mI (65678) MODBUS: Register name: COND[0m
+[0;31mE (65678) MODBUS: No response: device=0, register=2[0m
+[0;32mI (70678) MODBUS: Register name: TDS[0m
+[0;31mE (70678) MODBUS: No response: device=0, register=3[0m
+[0;32mI (75678) MODBUS: Register name: ORP[0m
+[0;31mE (75678) MODBUS: No response: device=1, register=0[0m
+[0;32mI (80678) MODBUS: Register name: TEMP[0m
+[0;31mE (80678) MODBUS: No response: device=1, register=1[0m
+[0;32mI (84668) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+Topic = UIgateway/config/Device/Modbus
+[0;32mI (84668) MQTT: Received 989/1114 bytes[0m
+[0;32mI (84668) MQTT: SUBSCRIBED TOPIC DATA RECEIVED[0m
+[0;32mI (84668) MQTT: Received 1114/1114 bytes[0m
+Complete Data = {
+  "Device_count": 1,
+  "Devices": [
+    {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1,1]
+    },
+      {
+      "Device_no": 3,
+      "Slave_ID": "0x01",
+      "Function_ID": "0x03",
+      "Device_Name": "ORP_Sensor",
+      "Register_Count": 4,
+      "Register_Name": ["ORP","TEMP","COND","TDS"],
+      "Register_Address": ["0x0000","0x0002","0x0003","0x0004","0x0005"],
+      "Quantity": [1,1,1,1,1],
+      "Data_Type": ["uint16","uint16","uint16","uint16","uint16"],
+      "Byte_Order": ["ABCD","ABCD","ABCD","ABCD","ABCD"],
+      "Offset": [1,1,1,1],
+      "Slope": [1,1,1,1,1],
+      "Decimal": [1,1,1,1]
+    }
+  ]
+}
+[0;32mI (85678) MODBUS: Register name: COND[0m
+[0;31mE (85678) MODBUS: No response: device=1, register=2[0m
+[0;32mI (90678) MODBUS: Register name: TDS[0m
+[0;31mE (90678) MODBUS: No response: device=1, register=3[0m
+[0;32mI (90678) MQTT: Payload: {"Device_count":2,"Devices":[{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]},{"Device_no":3,"Device_Name":"ORP_Sensor","Register_Name":["ORP","TEMP","COND","TDS"],"Status":["FAIL","FAIL","FAIL","FAIL"],"Value":[0,0,0,0]}]}[0m
+[0;32mI (508958) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (511458) wifi:ap_probe_send over, resett wifi status to disassoc[0m
+[0;32mI (511458) wifi:state: run -> init (0xc800)[0m
+[0;32mI (511478) wifi:pm stop, total sleep time: 437032974 us / 508150778 us[0m
+
+[0;32mI (511478) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (511478) wifi:<ba-del>idx:1, tid:6[0m
+[0;32mI (511478) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (511488) WIFI: STAT DISCONNECTED[0m
+[0;32mI (511488) WIFI:: DISCONNECT COUNT = 3[0m
+[0;32mI (513898) WIFI: STAT DISCONNECTED[0m
+[0;32mI (513898) WIFI:: DISCONNECT COUNT = 4[0m
+[0;32mI (516308) WIFI: STAT DISCONNECTED[0m
+[0;32mI (516308) WIFI:: DISCONNECT COUNT = 5[0m
+[0;32mI (518718) WIFI: STAT DISCONNECTED[0m
+[0;32mI (518718) WIFI:: DISCONNECT COUNT = 6[0m
+[0;32mI (521128) WIFI: STAT DISCONNECTED[0m
+[0;32mI (521128) WIFI:: DISCONNECT COUNT = 7[0m
+[0;32mI (523538) WIFI: STAT DISCONNECTED[0m
+[0;32mI (523538) WIFI:: DISCONNECT COUNT = 8[0m
+[0;32mI (525948) WIFI: STAT DISCONNECTED[0m
+[0;32mI (525948) WIFI:: DISCONNECT COUNT = 9[0m
+[0;32mI (528348) WIFI: STAT DISCONNECTED[0m
+[0;32mI (528348) WIFI:: DISCONNECT COUNT = 10[0m
+[0;32mI (528368) NVS: Wi-Fi credentials cleared[0m
+[0;32mI (528368) wifi:flush txq[0m
+[0;32mI (528368) wifi:stop sw txq[0m
+[0;32mI (528368) wifi:lmac stop hw txq[0m
+[0;32mI (528368) wifi:mode : softAP (7c:df:a1:e2:d7:99)[0m
+[0;32mI (528378) wifi:Total power save buffer number: 16[0m
+[0;32mI (528378) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (528378) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (528388) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (528398) WIFI: AP STARTED[0m
+[0;32mI (2502738) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2502738) wifi:station: 30:05:05:51:a7:07 join, AID=1, bgn, 40U[0m
+[0;32mI (2502738) WIFI: AP CONNECTED[0m
+[0;32mI (2502968) wifi:<ba-add>idx:2 (ifx:1, 30:05:05:51:a7:07), tid:0, ssn:21, winSize:64[0m
+[0;32mI (2503078) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
